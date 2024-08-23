@@ -2,11 +2,11 @@ class FootprintDr < Formula
   desc "Footprint Disaster Recovery CLI"
   homepage "https://docs.onefootprint.com/"
 
-  version = "0.1.0"
+  version = "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/onefootprint/footprint-dr-releases/releases/download/#{version}/footprint-dr-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "818b08295352474bc7817753506dc27fca067ae566c5e4eb9135e9a0197533a2"
+      sha256 "1783cdef3716aa6a37cb07b020431a8dbe8629a1ac713c86c3cdfa75163f491a"
 
       def install
         bin.install "footprint-dr"
